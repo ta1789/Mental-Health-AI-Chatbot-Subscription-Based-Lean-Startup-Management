@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Login </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style2.css') }}">    
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <h1 class="logo">Mental Health Support</h1>
+                </div>
+            </nav>
+        </header>
+        <div class="logincontent" align="center">
+            <div class="logintop">
+                <h1>Thanyou for Registering you may now Login</h1><br>
+                <a href="{{ url_for('login')}}"><input type="button" class="btn" value="Login"></a>
+            </div>
+        </div>
+        <footer>
+            <p>Contact us for more information</p>
+        </footer>
+    </body>
+</html>

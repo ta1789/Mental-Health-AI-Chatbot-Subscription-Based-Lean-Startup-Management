@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription Payment Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/billstyle.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Choose a Subscription Plan</h1>
+    
+    <div class="subscription-plans">
+        <div class="plan">
+            <h2>Basic Plan</h2>
+            <p>$9.99/month</p>
+            <button onclick="purchase('Basic Plan')">Subscribe</button>
+        </div>
+        <div class="plan">
+            <h2>Premium Plan</h2>
+            <p>$19.99/month</p>
+            <button onclick="purchase('Premium Plan')">Subscribe</button>
+        </div>
+        <div class="plan">
+            <h2>Pro Plan</h2>
+            <p>$29.99/month</p>
+            <button onclick="purchase('Pro Plan')">Subscribe</button>
+        </div>
+    </div>
+    
+    <div class="payment-details">
+        <h2>Payment Details</h2>
+        <p>Select a subscription plan to proceed with the payment.</p>
+    </div>
+</div>
+
+<script>
+    function purchase(plan) {
+        // You can implement payment logic here based on the selected plan
+        // For the demo, let's update the payment details section
+        const paymentDetails = document.querySelector('.payment-details');
+        paymentDetails.innerHTML = `
+            <h2>Payment Details</h2>
+            <p>You've selected the ${plan}. Please proceed to make the payment.</p>
+            <p>Payment method: Credit Card / Online Banking</p>
+            <button onclick="processPayment()">Proceed to Pay</button>
+        `;
+    }
+
+    function processPayment() {
+        // Placeholder function for processing payment
+        alert("Redirecting to payment gateway...");
+
+        window.open("https://www.onlinesbi.sbi/");
+        // Actual payment processing steps would go here
+    }
+</script>
+
+</body>
+</html>
+

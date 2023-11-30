@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Login </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style2.css') }}">    
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <h1 class="logo">Mental Health Support</h1>
+                </div>
+            </nav>
+        </header>
+        <div class="logincontent" align="center">
+            <div class="logintop">
+                <h1>Hello Tanmay please buy subscription model to continue using Chatbot services</h1><br>
+                <a href="{{ url_for('subs')}}"><input type="button" class="btn" value="Subscribe"></a>
+            </div>
+        </div>
+        <footer>
+            <p>Contact us for more information</p>
+        </footer>
+    </body>
+</html>

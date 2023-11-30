@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style2.css') }}">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Mental Health Support</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Create Account for Free</h2>
+            <a href="{{url_for('register')}}" class="btn">Register</a>
+        </section>
+
+        <section class="hero">
+            <h2>Supporting Mental Well-being</h2>
+            <p>We have developed a personal Mental Health AI Chatbot 
+               which is cost efficient and can be a buddy for you in difficult times.</p>
+            <a href="{{url_for('chat')}}" class="btn">Explore Chatbot for Free</a>
+        </section>
+        
+        <section class="hero">
+            <h2>About Us</h2>
+            <p>Get to know more about subscription model</p>
+            <a href="{{url_for('subs')}}" class="btn">Subscription Model</a>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mental Health Support</p>
+    </footer>
+</body>
+</html>
